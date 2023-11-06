@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body {
+            background-image: url('fondo.jpeg');
+            background-size: cover;
+            background-position: center;
+            text-align: center;
+            color: white;
+        }
+
+        h1 {
+            font-size: 36px;
+            padding: 20px 0;
+        }
+
+        img {
+            max-width: 100%;
+        }
+
+        header {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            padding: 10px;
+        }
+
+        a {
+            color: white;
+            text-decoration: none;
+            margin-right: 20px;
+        }
+
+        form {
+            margin-top: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        label, input {
+            display: block;
+            margin: 10px;
+            width: 300px;
+        }
+
+        .login-box {
+            background-color: black;
+            color: white;
+            padding: 20px;
+            margin-top: 20px;
+            display: inline-block;
+            width: 150px;
+            height: 50px;
+        }
+
+        .password-toggle {
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <a href="SignUP.html">Sign Up</a> <!-- Reemplaza 'pagina_sign_up.html' con la URL de la página de registro -->
+    </header>
+
+    <h1>Drink'n Tunes</h1>
+    <img src="drink.jpg" alt="Descripción de la imagen">
+
+    <form action="pagina_de_destino.html"> <!-- Reemplaza 'pagina_de_destino.html' con la URL de la página a la que deseas redirigir -->
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
+        <span class="password-toggle" onclick="togglePassword()">Mostrar contraseña</span>
+
+        <button type="submit" class="login-box">Ingresar</button>
+    </form>
+
+    <script>
+        function togglePassword() {
+            var passwordField = document.getElementById("password");
+            if (passwordField.type === "password") {
+                passwordField.type = "text";
+            } else {
+                passwordField.type = "password";
+            }
+        }
+    </script>
+</body>
+</html>
