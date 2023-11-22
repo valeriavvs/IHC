@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="configuration.css">
+    <title>Configuración</title>
+</head>
+<body>
+
+    <div class="desplegable" onmouseover="mostrarMenu()" onmouseout="ocultarMenu()">
+        <button>☰</button>
+        <div class="contenido-desplegable" id="contenidoDesplegable">
+            <a href="nuevo1as.html">Inicio</a>
+            <a href="chats.html">Chat</a>
+            <a href="configuration.html">Configuración</a>
+            <a href="perfil.html">Perfil</a>
+        </div>
+    </div>
+
+    <h1>Configuración</h1>
+
+    <h2>Notificaciones</h2>
+    <div>
+        <p>Mis Anuncios: <input type="checkbox" id="misAnuncios"></p>
+        <p>Anuncios para ti: <input type="checkbox" id="anunciosParaTi"></p>
+    </div>
+
+    <h2>Ubicación</h2>
+    <div>
+        <p>Usar navegador GPS: <input type="checkbox" id="navegadorGPS"></p>
+        <p>Recolección de datos: <input type="checkbox" id="recoleccionDatos"></p>
+    </div>
+
+    <h2>Modo Oscuro</h2>
+    <div>
+        <p>Activar/Desactivar: <input type="checkbox" id="modoOscuro"></p>
+    </div>
+
+    
+    <h2>Contacto con Soporte Técnico</h2>
+
+    <img src="data:image/png;base64,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" alt="Soporte Técnico" width="100" height="100">
+</div>
+
+    <h2>Redes Sociales</h2>
+
+    <div class="red-social">
+        <a href="https://www.facebook.com" target="_blank">
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAH4AAAB+CAMAAADV/VW6AAAAbFBMVEX29PVBc7j///8+cbjm6/Hw8/hSf7z29fQ6b7FBdLf3+frz9vpZhr/8+fhEebvr7/Qxa7UlZLCpv9e/zNzY4eu0xdopZa2IpMu5y99dhbre5+9QfLZ1l8HJ1+dKdrB+nslmi7ydtdSTq85vkb850YIiAAADo0lEQVRoge2a4ZayIBBA1TENEhnLtDI3y/d/xw+zr1QgOwesP9yzf3I7e2GAYZD1PIfD4XA4HA6Hw+FwOH5M/FN5HHvsgfjwZTtjlOe77VWw3eWcijZ8gfj+w4JwX1ZFhj1ZVlTlgd+jsHAYOjnfHwsEfwgAFs1hw5YehJiFt3Ti/t8ErLbhsg1g3jVFlbvT3xtAF5wErP7TyR9kx9Ni/s0tA/Je70NxXcbPTseZrvdgu1rCnhPljFP4K76Aff2hvfOHlgeAnTr73MA/IFBxq3520kaeELjjD78ACbWpp0e1nRAfsvTYns9tm0Tr59QEPNtLQDG7aeY8gfW55jTooKuwTp+txK2d8HdZvs40kccmDwasotevipOt/Wf1pxn4rAxG8IEeWmqnImFXVE95uAR6vZ8dmBV/qFlvUNF3ekisZL/gqpl3eAje6X3cW5h9MU/VIw/RtPMTvVj85sFne03n4Ta1B5uR3sfavPeBJuP4Rf3y0n3z1zEZndI8+mGhtvsQvuxHFFnXh2lD14GpXcReM/FT/tTfurRE5FIEa9Pus1K310SrZ7KrNN9B48qHRuq/PNSHuhZCa7bxxDHXDf0nej8123djL9ftNkP9WvedjJv1nu20Zf1H+tyo9x7bmukNEw9TJPy+uBrqQVFv3cGD2dRX6ZOeZvNM9Y8nSTT1m+46Cn20oj2DnPt4IH3Zvh5SaaN7Ukr6naFennpv9M00+FlttuWynbTu9Xo5Q2a54Y4vpx29PpTOIgU3K3cVSVevz6WFlxrWO7EcUL3+MJ4n4gTUGtoVG65eL68746MOm3RJLDy+6Xl5H59baeIbpnzBajL4xI96klfSrfoHE7k4ABoXWx6TFrMv5Xxx9r/n/Gnsb+alphT9/4z1KsB01Xds1JXc/IYLjXnsRcWh3vLn9YVxndvp41DZ/Vk9NDZO2GLpb1X13oyeiO3G0vsN5Zudud7jxc7xvnuvpai25/TArd23KCu+93rTKm/sbyX/Oz2xknFexJsIJpv5Wz221O69Cu9WH3yox8bqS00Bm65+vZ5gs8ArdZ7gZ3oReft2sfxH80+tJ8QvyiXsXld1FzCj9xFsrrgRMTu1Gaj0z4fZxe6b/EkD6CG53+IR1fkesLGU57Ww1f6IqNADQlN7C9u71+txfVkjjoKPWKzLPPjKPXJ3h1xf2+ql/2u3vftbF+mMMfq4wRfLjLLvXKBr+em/Mvxc73A4HA6Hw+FwOBwOxz8ofDivABixCgAAAABJRU5ErkJggg==" alt="Facebook" width="100" height="100">
+        </a>
+    </div>
+
+    <div class="red-social">
+        <a href="https://www.twitter.com" target="_blank">
+            <img src="data:image/png;base64,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" alt="Twitter" width="100" height="100">
+            
+        </a>
+    </div>
+
+    <script src="configuration.js"></script>
+
+</body>
+</html>
