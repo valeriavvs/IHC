@@ -1,63 +1,8 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <style>
-        body {
-            background-color: white;
-            text-align: center;
-            color: black;
-        }
-
-        h1 {
-            background-color: #BDE3FF;
-            color: black;
-            padding: 20px;
-            font-size: 24px;
-        }
-
-        .user-type {
-            margin-top: 20px;
-            font-size: 18px;
-        }
-
-        .input-container {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            margin: 10px;
-            padding: 10px;
-            border-radius: 5px;
-        }
-
-        .input-container input {
-            width: 80%;
-            padding: 10px;
-            margin: 5px;
-            border: 1px solid #0D99FF;
-            border-radius: 5px;
-            background-color: #BDE3FF;
-        }
-
-        .accept-terms {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            font-size: 16px;
-        }
-
-        .accept-checkbox {
-            margin: 5px 0;
-        }
-
-        .signup-button {
-            background-color: #BDE3FF;
-            color: #000000;
-            padding: 10px 20px;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-        }
-    </style>
+    <link rel="stylesheet" href="styles_signup.css">
+    <title>Creación de Cuenta</title>
 </head>
 <body>
     <a href="IHC.html">Back</a>
@@ -65,12 +10,12 @@
     <div class="user-type">Restaurante/Artista</div>
 
     <div class="input-container">
-        <label for="nombre">Nombre Completo:</label>
+        <label for="nombre">Nombre:</label>
         <input type="text" id="nombre" name="nombre" required>
     </div>
 
     <div class="input-container">
-        <label for="apellido">Apellido Completo:</label>
+        <label for="apellido">Apellido:</label>
         <input type="text" id="apellido" name="apellido" required>
     </div>
 
@@ -95,12 +40,13 @@
     </div>
 
     <div class="accept-terms">
+        <label for="aceptar_terminos">Estás de acuerdo con los términos y condiciones
         <input type="checkbox" class="accept-checkbox" id="aceptar_terminos" name="aceptar_terminos">
-        <label for="aceptar_terminos">Estás de acuerdo con los términos y condiciones</label>
+        </label>
     </div>
-
+    <br>
+    <br>
     <button class="signup-button" onclick="redirectToRegistro()">Crear Cuenta</button>
-
     <script>
         function redirectToRegistro() {
             window.location.href = "pagina_registro.html";
